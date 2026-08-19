@@ -28,7 +28,7 @@
     background:var(--bg); color:var(--ink); min-height:100vh;
     display:flex; flex-direction:column;
   }
-  .wrap{max-width:1120px; margin:0 auto; padding:0 20px; width:100%}
+  .wrap{max-width:1200px; margin:0 auto; padding:0 20px; width:100%}
 
   /* HERO */
   .hero{
@@ -64,9 +64,10 @@
 
   /* GRID */
   main{flex:1; padding:32px 0 40px; margin-top:-38px}
-  .grid{display:grid; gap:18px; grid-template-columns:repeat(4,1fr)}
-  @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:540px){.grid{grid-template-columns:1fr}}
+  .grid{display:grid; gap:16px; grid-template-columns:repeat(5,1fr)}
+  @media (max-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:480px){.grid{grid-template-columns:1fr}}
 
   .proj{
     display:flex; flex-direction:column;
@@ -89,6 +90,7 @@
   .proj.c-red   .proj-top{background:linear-gradient(140deg,var(--red-hot),var(--red-deep))}
   .proj.c-blue  .proj-top{background:linear-gradient(140deg,#3E63DD,#1E349B)}
   .proj.c-violet .proj-top{background:linear-gradient(140deg,#8B5CF6,#5B21B6)}
+  .proj.c-amber .proj-top{background:linear-gradient(140deg,#F5A524,#B45309)}
   .proj-top::after{
     content:""; position:absolute; inset:0;
     background:radial-gradient(300px 120px at 80% -20%, rgba(255,255,255,.25), transparent 70%);
@@ -104,6 +106,7 @@
   .proj.c-green .proj-tag{color:#0A8A3A; background:rgba(10,138,58,.10)}
   .proj.c-blue  .proj-tag{color:#2947C4; background:rgba(62,99,221,.10)}
   .proj.c-violet .proj-tag{color:#6D28D9; background:rgba(139,92,246,.12)}
+  .proj.c-amber .proj-tag{color:#B45309; background:rgba(245,165,36,.14)}
   .proj-desc{margin-top:11px; font-size:13.5px; color:var(--slate); line-height:1.5; flex:1}
   .proj-go{
     margin-top:14px; display:inline-flex; align-items:center; gap:7px;
@@ -180,6 +183,18 @@
         <span class="proj-tag">iOS · Almanca</span>
         <div class="proj-desc">Günde birkaç dakikada Almanca kelime öğreten iOS uygulaması. 3500+ TELC kelimesiyle, A1'den B2'ye, ücretsiz.</div>
         <span class="proj-go">App Store <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+
+    <a class="proj c-amber" href="https://ceude.github.io/usdtry/">
+      <div class="proj-top">
+        <svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.2a2.4 2.4 0 0 1 2.5-1.7c1.3 0 2.3.8 2.3 1.9 0 2.4-4.8 1.6-4.8 4 0 1.1 1 1.9 2.5 1.9a2.4 2.4 0 0 0 2.5-1.7"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="proj-name">USD/TRY Projeksiyon</div>
+        <span class="proj-tag">Döviz · Trend</span>
+        <div class="proj-desc">Kurun geçmiş trendini parça parça lineer fit eder. "Şu kur hangi tarihte, şu tarihte kur kaç?" — doğruyu uzatarak çevirir.</div>
+        <span class="proj-go">Aç <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </div>
     </a>
 
