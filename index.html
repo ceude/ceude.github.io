@@ -93,6 +93,8 @@
   .proj.c-amber .proj-top{background:linear-gradient(140deg,#F5A524,#B45309)}
   .proj.c-navy  .proj-top{background:linear-gradient(140deg,#2C3E8C,#0B0F2E)}
   .proj.c-pink  .proj-top{background:linear-gradient(140deg,#F2A7BE,#B79BDB)}
+  .proj.c-enka  .proj-top{background:linear-gradient(140deg,#2F6FE0,#00205B)}
+  .proj.c-teal  .proj-top{background:linear-gradient(140deg,#14B8A6,#0F5F73)}
   .proj-top::after{
     content:""; position:absolute; inset:0;
     background:radial-gradient(300px 120px at 80% -20%, rgba(255,255,255,.25), transparent 70%);
@@ -111,6 +113,8 @@
   .proj.c-amber .proj-tag{color:#B45309; background:rgba(245,165,36,.14)}
   .proj.c-navy  .proj-tag{color:#2C3E8C; background:rgba(44,62,140,.10)}
   .proj.c-pink  .proj-tag{color:#B4517A; background:rgba(234,166,187,.18)}
+  .proj.c-enka  .proj-tag{color:#00205B; background:rgba(0,32,91,.08)}
+  .proj.c-teal  .proj-tag{color:#0F766E; background:rgba(20,184,166,.12)}
   .proj-desc{margin-top:11px; font-size:13.5px; color:var(--slate); line-height:1.5; flex:1}
   .proj-go{
     margin-top:14px; display:inline-flex; align-items:center; gap:7px;
@@ -154,14 +158,14 @@
       </div>
     </a>
 
-    <a class="proj c-red" href="https://ceude.github.io/HHBahn/">
+    <a class="proj c-pink" href="https://ceude.github.io/ninni/">
       <div class="proj-top">
-        <svg class="glyph" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="14" rx="2.5"/><path d="M9 17l-2 4M15 17l2 4M7 12h10"/></svg>
+        <svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/><path d="M17 4.5h.01M20 8h.01"/></svg>
       </div>
       <div class="proj-body">
-        <div class="proj-name">Wochenendkurztrip</div>
-        <span class="proj-tag">Tren · Haftasonu</span>
-        <div class="proj-desc">Hamburg ve Münih çıkışlı ucuz haftasonu tren biletlerini otomatik tarar, fiyata göre sıralar. Yeni fırsatlarda mail atar.</div>
+        <div class="proj-name">Ninni</div>
+        <span class="proj-tag">Bebek · Anı</span>
+        <div class="proj-desc">Bebeğinin ilk yılı için minik defter. Emzirme, uyku, bez ve demir hatırlatıcısı; her küçük kayıt ay sonunda bir mektuba dönüşür.</div>
         <span class="proj-go">Aç <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </div>
     </a>
@@ -190,14 +194,14 @@
       </div>
     </a>
 
-    <a class="proj c-pink" href="https://ceude.github.io/ninni/">
+    <a class="proj c-enka" href="https://ceude.github.io/izin/">
       <div class="proj-top">
-        <svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/><path d="M17 4.5h.01M20 8h.01"/></svg>
+        <svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M9 15l2 2 4-4"/></svg>
       </div>
       <div class="proj-body">
-        <div class="proj-name">Ninni</div>
-        <span class="proj-tag">Bebek · Anı</span>
-        <div class="proj-desc">Bebeğinin ilk yılı için minik defter. Emzirme, uyku, bez ve demir hatırlatıcısı; her küçük kayıt ay sonunda bir mektuba dönüşür.</div>
+        <div class="proj-name">Yıllık İzin Planlayıcı</div>
+        <span class="proj-tag">İzin · Niedersachsen</span>
+        <div class="proj-desc">Niedersachsen resmi tatillerine göre yıllık izin planı. Köprü günleriyle en verimli takvimi hazırlar; İK için PDF ve Excel çıktısı verir.</div>
         <span class="proj-go">Aç <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </div>
     </a>
@@ -222,6 +226,30 @@
         <div class="proj-name">USD/TRY Projeksiyon</div>
         <span class="proj-tag">Döviz · Trend</span>
         <div class="proj-desc">Kurun geçmiş trendini parça parça lineer fit eder. "Şu kur hangi tarihte, şu tarihte kur kaç?" — doğruyu uzatarak çevirir.</div>
+        <span class="proj-go">Aç <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+
+    <a class="proj c-red" href="https://ceude.github.io/HHBahn/">
+      <div class="proj-top">
+        <svg class="glyph" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="14" rx="2.5"/><path d="M9 17l-2 4M15 17l2 4M7 12h10"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="proj-name">Wochenendkurztrip</div>
+        <span class="proj-tag">Tren · Haftasonu</span>
+        <div class="proj-desc">Hamburg ve Münih çıkışlı ucuz haftasonu tren biletlerini otomatik tarar, fiyata göre sıralar. Yeni fırsatlarda mail atar.</div>
+        <span class="proj-go">Aç <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+
+    <a class="proj c-teal" href="CREWMEISTER_LINK">
+      <div class="proj-top">
+        <svg class="glyph" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6M12 2v3"/></svg>
+      </div>
+      <div class="proj-body">
+        <div class="proj-name">Crewmeister Otomatik Doldurucu</div>
+        <span class="proj-tag">İş · Otomasyon</span>
+        <div class="proj-desc">Crewmeister'da çalışma saatlerini tek tek girmek yerine otomatik doldurur. Zaman kaydını saniyeler içinde bitir.</div>
         <span class="proj-go">Aç <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </div>
     </a>
